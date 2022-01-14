@@ -19,7 +19,7 @@ public class RecoveryRoomService {
     }
 
     public List<RecoveryRoomType> getAllRecoveryRoomTypes(){
-        return null;
+        return rp.findAllRecoveryRoomTypes();
     }
 
     public RecoveryRoomType getRecoveryRoomType(String typeName) {
