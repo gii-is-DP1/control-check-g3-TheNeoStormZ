@@ -27,7 +27,7 @@ public class RecoveryRoomService {
     }
 
     public List<RecoveryRoom> getRecoveryRoomsBiggerThan(double size) {
-        return null;
+        return rp.findBySizeMoreThan(size);
     }
 
     public RecoveryRoom save(RecoveryRoom p) {
