@@ -23,7 +23,7 @@ public class RecoveryRoomService {
     }
 
     public RecoveryRoomType getRecoveryRoomType(String typeName) {
-        return null;
+        return rp.getRecoveryRoomType(typeName);
     }
 
     public List<RecoveryRoom> getRecoveryRoomsBiggerThan(double size) {
