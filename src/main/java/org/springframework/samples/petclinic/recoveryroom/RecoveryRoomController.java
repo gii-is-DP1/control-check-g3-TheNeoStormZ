@@ -40,7 +40,6 @@ public class RecoveryRoomController {
 			return VIEWS_ROOMS_CREATE_OR_UPDATE_FORM;
 		}
 		else {
-			//creating owner, user and authorities
 			this.roomService.save(room);
 			
 			return "welcome";
