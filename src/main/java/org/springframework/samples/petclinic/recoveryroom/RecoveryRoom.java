@@ -34,8 +34,9 @@ public class RecoveryRoom extends BaseEntity{
 	
 	@Column(name = "secure")
     boolean secure;
-
-    
-    @Transient
+	
+	
+	@ManyToOne(optional = false)
+	@JoinColumn(name="roomtype")
     RecoveryRoomType roomType;
 }
